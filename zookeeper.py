@@ -119,18 +119,32 @@ Switching on camera from habitat with rabbits...
 (" ~----( ~   Y.  )
 It seems there will be more rabbits soon!"""
 
+message  = """
+Choose from the following list of animals to see their status:
+[Camel, Lion, Deer, Goose, Bat, Rabbit]
+"""
 
-animals = [camel, lion, deer, goose, bat, rabbit]
+print(message)
 
-# write your code here
+animal_name = input("Enter animal name or type \"exit\" to exit\n? ").lower()
 
-while True:
-    A = input("Which habitat # do you need?")
-    if A != "exit":
-        B = int(A)
-        print(animals[B])
-    else:
-        if A == "exit":
-            break;
+while (animal_name != "exit"):
+   if (animal_name == "camel"):
+      print(camel)
+   elif (animal_name == "lion"):
+      print(lion)
+   elif (animal_name == "deer"):
+      print(deer)
+   elif (animal_name == "goose"):
+      print(goose)
+   elif (animal_name == "bat"):
+      print(bat)
+   elif (animal_name == "rabbit"):
+      print(rabbit)
+   else:
+      print("Wrong input")
+
+   animal_name = input("Enter animal name or type \"exit\" to exit\n? ").lower()
 
 print("See you!")
+
