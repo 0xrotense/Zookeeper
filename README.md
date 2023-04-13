@@ -1,2 +1,2 @@
-# Zookeeper CLI
-Zookeeper's tool for monitoring animals and their status.
+# Zookeeper CLI 
+Python Zookeeper's tool for monitoring animals and their status.
